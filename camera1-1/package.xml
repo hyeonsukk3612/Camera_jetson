@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>camera1-1</name>
+  <version>0.0.1</version>
+  <description>ROS2 패키지: 영상 송수신 및 이진화 처리</description>
+  <maintainer email="jetson@todo.todo">jetson</maintainer>
+  <license>Apache-2.0</license>
+
+  <!-- 빌드 도구 의존성 -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- 실행 및 빌드 의존성 -->
+  <depend>rclcpp</depend>
+  <depend>sensor_msgs</depend>
+  <depend>cv_bridge</depend>
+  <depend>opencv4</depend>
+
+  <!-- 테스트 의존성 (필요시) -->
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
