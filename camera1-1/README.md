@@ -2,7 +2,7 @@
 
 예제 1 번의 subscriber 노드를 수정하여 수신한 영상을 컬러영상 그
 레이영상 이진영상으로 변환하고 이진영상을 PC 로 전송하여 출력하
-는 패키지 camera 1 1 을 작성하라
+는 패키지 camera 1-1 을 작성하라
 writer open dst 0 double 30 cv Size 640 360 false
 퍼블리셔 노드는 Jetson 보드에서 camera 패키지의 pub 노드를 실행하
 라
@@ -14,7 +14,7 @@ writer open dst 0 double 30 cv Size 640 360 false
 
 ***
 
-colcon build --symlink-install --packages-select camera
+colcon build --symlink-install --packages-select camera1-1
 
 source ~/ros2_ws/install/local_setup.bash
 
@@ -24,11 +24,11 @@ source ~/ros2_ws/install/local_setup.bash
 
 ***
 
-ros2 run camera pub
+ros2 run camera1-1 pub
 
-ros2 run camera sub_jetson
+ros2 run camera1-1 sub_jetson
 
-ros2 run camera sub_wsl
+ros2 run camera1-1 sub_wsl
 
 ***
 
