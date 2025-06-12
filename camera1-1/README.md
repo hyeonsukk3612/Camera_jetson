@@ -16,7 +16,7 @@ writer open dst 0 double 30 cv Size 640 360 false
 
 colcon build --symlink-install --packages-select camera1-1
 
-source ~/ros2_ws/install/local_setup.bash
+source install/setup.bash
 
 ***
 
