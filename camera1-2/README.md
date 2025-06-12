@@ -21,6 +21,8 @@ source ~/ros2_ws/install/local_setup.bash
 
 ***
 
+ros2 run camera1-1 pub
+
 ros2 run camera1-2 sub
 
 ros2 run camera1-2 sub_jetson
