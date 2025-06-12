@@ -23,8 +23,6 @@ source install/setup.bash
 
 ros2 run camera1-2 pub
 
-ros2 run camera1-2 sub
-
 ros2 run camera1-2 sub_jetson
 
 ***
@@ -32,6 +30,8 @@ ros2 run camera1-2 sub_jetson
 윈도우
 
 ***
+
+ros2 run camera1-2 sub_wsl
 
 gst-launch-1.0 -v udpsrc port=9005 ! ‘application/x-rtp,encodingname=(string)H264,payload=(int)96’ ! rtph264depay ! queue ! avdec_h264 ! videoconvert ! autovideosink
 
