@@ -13,7 +13,7 @@
 
 colcon build --symlink-install --packages-select camera1-2
 
-source ~/ros2_ws/install/local_setup.bash
+source install/setup.bash
 
 ***
 
